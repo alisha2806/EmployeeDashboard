@@ -1,0 +1,18 @@
+<div *ngIf="Inputitem" class="row">
+  <div class="col-sm-3">
+    <img class="image-info" src="/assets/images/{{Inputitem.image}}">
+  </div>
+  <div class="col-sm-9   ">
+    <p class="name-info">{{Inputitem.name}}</p>
+    <div class="slidecontainer">
+      <p>
+        Popularity   <span> <input type="range" min="1" max="5" value="{{Inputitem.popularity}}" class="slider" id="myRange" #ranger (input)="updateSize(ranger.value)"></span>
+      </p>
+      </div>
+    <div class="bio-info">
+      <h4>Biography</h4>
+      <p> {{Inputitem.biography}}</p>
+    </div>
+  </div>
+</div>
+

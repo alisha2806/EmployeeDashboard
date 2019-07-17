@@ -1,0 +1,57 @@
+.image-info {
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+  width: 110px;
+}
+
+.name-info {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.bio-info {
+  font-size: 1.2rem;
+  color: white;
+  background-color: darkslategrey;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 10px 10px yellow;
+}
+.slider {
+  -webkit-appearance: none;
+  width: 70%;
+  height: 3px;
+  border-radius: 5px;
+  background-color: black;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+  .slider:hover {
+    opacity: 1;
+  }
+
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+  }
+
+  .slider::-moz-range-thumb {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+  }
+
+.slidecontainer input {
+  display: inline-block !important;
+}

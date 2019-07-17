@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="employee-info col-sm-4" *ngIf="listitem">
+    <p *ngFor="let item of listitem" (click)="onSelect(item)">{{item.name}}</p>
+  </div>
+  <div class=" container-info col-sm-8">
+    <app-details [Inputitem]="containeritem" (popularityUpdate)="changeFont($event)"></app-details>
+    <div [@popOverState]="stateName">
+      <h5 class="left-section">Hello! Please click on the employer's name on the left section.</h5>
+    </div>
+    <button class="btn btn-success" (click)="toggle()">CLICK ME TO SEE THE ANIMATION!</button>
+  </div>
+</div>
